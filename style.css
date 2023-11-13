@@ -1,0 +1,189 @@
+:root {
+  --primary-color: #2c1b47;
+  --secondary-color: #9356a0;
+  --tertiary-color: #724c9d;
+  --dark-color: #1e1c1c;
+  --light-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--dark-color);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--light-color);
+  border-radius: 10px;
+  border: 1px var(--dark-color) solid;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+.jumbotron {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 104, 255, 1) 100%);
+  height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.star {
+  position: absolute;
+  opacity: 40%;
+  pointer-events: none;
+}
+
+.titlewrap,
+.title {
+  width: 500px;
+}
+
+.waveb {
+  margin-top: -23rem;
+  pointer-events: none;
+}
+
+.wavet {
+  margin-bottom: -20rem;
+  pointer-events: none;
+}
+
+.work {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.workwrap {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.projdiv {
+  transform: perspective(500px) rotateY(25deg);
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: transform 1s ease 0s;
+}
+
+.projdiv ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.projdiv::-webkit-scrollbar-thumb {
+  background: var(--light-color);
+  border-radius: 10px;
+}
+
+.projdiv::-webkit-scrollbar {
+  width: 15px;
+}
+
+.proj {
+  font-size: 60px;
+  opacity: 20%;
+  transition: 0.25s ease-in-out 0s;
+}
+
+.projhover {
+  opacity: 100%;
+  font-size: 64px;
+}
+
+.proj:hover {
+  cursor: pointer;
+}
+
+.expdiv {
+  transform: perspective(500px) rotateY(-25deg);
+  border-radius: 1rem;
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: transform 1s ease 0s;
+}
+
+.exp {
+  position: absolute;
+  font-size: 20px;
+}
+
+.about {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+}
+
+.aboutwrap {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.contact {
+  background-color: var(--tertiary-color);
+}
+
+.contactwrap {
+  padding-top: 7rem;
+}
+
+.socmed {
+  color: var(--light-color);
+}
+
+.subtitle {
+  color: var(--light-color);
+}
+
+.circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  scale: 125%;
+}
+.circle:hover {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: var(--secondary-color);
+  scale: 125%;
+}
+
+.wraplist {
+  display: block;
+  list-style-type: none;
+}
+
+li {
+  text-decoration: none;
+  padding-right: 30px;
+  float: left;
+}
+
+.sendmsgbtn {
+  background-color: var(--main-color);
+}
+
+.cpyrght {
+  color: var(--main-color);
+}
+
+.form .form-control::placeholder {
+  color: var(--light-color);
+}
+
+.form-control:focus {
+  box-shadow: none; /* Remove the focus box-shadow */
+  border-color: initial; /* Reset border color on focus */
+  /* Add any other necessary styling to customize the focus appearance */
+}
