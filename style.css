@@ -187,3 +187,63 @@ li {
   border-color: initial; /* Reset border color on focus */
   /* Add any other necessary styling to customize the focus appearance */
 }
+
+@media (max-width: 991px) {
+  html {
+    overflow-x: hidden;
+  }
+  .waveb {
+    margin: 0;
+  }
+  .wavet {
+    margin: 0;
+  }
+  .titlewrap,
+  .title {
+    width: 300px;
+  }
+  .wrap {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    transform: none !important;
+  }
+  .projdiv {
+    transform: perspective(500px) rotateY(0deg);
+    border-radius: 1rem;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: transform 1s ease 0s;
+  }
+
+  .projdiv::-webkit-scrollbar {
+    display: none;
+  }
+
+  .proj {
+    font-size: 24px;
+    opacity: 20%;
+    transition: 0.25s ease-in-out 0s;
+  }
+
+  .projhover {
+    opacity: 100%;
+    font-size: 28px;
+  }
+
+  .proj:hover {
+    cursor: pointer;
+  }
+  .expdiv {
+    transform: perspective(500px) rotateY(0deg);
+    border-radius: 1rem;
+    transition: transform 1s ease 0s;
+  }
+
+  .exp {
+    position: absolute;
+    font-size: 16px;
+  }
+}
